@@ -31,4 +31,4 @@ class Products(models.Model):
         verbose_name_plural='Продукты'
         
     def __str__(self):
-        return self.name    
+        return f'{self.name}, в наличии {self.quantity}'    
